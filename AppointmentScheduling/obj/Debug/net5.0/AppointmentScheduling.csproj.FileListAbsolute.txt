@@ -389,3 +389,4 @@ C:\_src\AppointmentScheduling\AppointmentScheduling\obj\Debug\net5.0\Appointment
 C:\_src\AppointmentScheduling\AppointmentScheduling\obj\Debug\net5.0\AppointmentScheduling.genruntimeconfig.cache
 C:\_src\AppointmentScheduling\AppointmentScheduling\bin\Debug\net5.0\libman.json
 C:\_src\AppointmentScheduling\AppointmentScheduling\obj\Debug\net5.0\Razor\Views\Account\Login.cshtml.g.cs
+C:\_src\AppointmentScheduling\AppointmentScheduling\obj\Debug\net5.0\Razor\Views\Account\Register.cshtml.g.cs
