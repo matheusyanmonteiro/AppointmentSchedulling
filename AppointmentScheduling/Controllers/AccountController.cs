@@ -17,7 +17,7 @@ namespace AppointmentScheduling.Controllers
 
         public IActionResult Login()
         {
-            return View();
+            return View(); 
         }
     }
 }
