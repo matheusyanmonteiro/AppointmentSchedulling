@@ -41,7 +41,7 @@ namespace AppointmentScheduling.Controllers
 
         if (result.Succeeded)
         {
-          return RedirectToAction("Index", "Home");
+          return RedirectToAction("Index", "Appointment");
         }
 
         ModelState.AddModelError("", "Invalid login attemp");
@@ -79,7 +79,7 @@ namespace AppointmentScheduling.Controllers
         {
           await _userManager.AddToRoleAsync(user, model.RoleName);
           await _singInManager.SignInAsync(user, isPersistent: false);
-          return RedirectToAction("Index", "home");
+          return RedirectToAction("Index", "Appointment");
         }
 
         foreach (var error in result.Errors)
