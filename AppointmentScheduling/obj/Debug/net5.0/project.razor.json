@@ -15619,6 +15619,11 @@
   "RootNamespace": "AppointmentScheduling",
   "Documents": [
     {
+      "FilePath": "/home/mtfs/Documents/projects/AppointmentSchedulling/AppointmentScheduling/Views/Appointment/Index.cshtml",
+      "TargetPath": "Views\\Appointment\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/mtfs/Documents/projects/AppointmentSchedulling/AppointmentScheduling/Views/Shared/_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"

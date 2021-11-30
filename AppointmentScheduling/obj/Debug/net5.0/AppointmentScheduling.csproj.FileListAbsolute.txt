@@ -871,3 +871,4 @@ C:/_src/AppointmentScheduling/AppointmentScheduling/obj/Debug/net5.0/Razor/Views
 /home/mtfs/Documents/projects/AppointmentSchedulling/AppointmentScheduling/obj/Debug/net5.0/ref/AppointmentScheduling.dll
 /home/mtfs/Documents/projects/AppointmentSchedulling/AppointmentScheduling/obj/Debug/net5.0/AppointmentScheduling.pdb
 /home/mtfs/Documents/projects/AppointmentSchedulling/AppointmentScheduling/obj/Debug/net5.0/AppointmentScheduling.genruntimeconfig.cache
+/home/mtfs/Documents/projects/AppointmentSchedulling/AppointmentScheduling/obj/Debug/net5.0/Razor/Views/Appointment/Index.cshtml.g.cs
