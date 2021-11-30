@@ -7434,26 +7434,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mathe\\.nuget\\packages\\": {}
+    "/home/mtfs/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\_src\\AppointmentScheduling\\AppointmentScheduling\\AppointmentScheduling.csproj",
+      "projectUniqueName": "/home/mtfs/Documents/projects/AppointmentSchedulling/AppointmentScheduling/AppointmentScheduling.csproj",
       "projectName": "AppointmentScheduling",
-      "projectPath": "C:\\_src\\AppointmentScheduling\\AppointmentScheduling\\AppointmentScheduling.csproj",
-      "packagesPath": "C:\\Users\\mathe\\.nuget\\packages\\",
-      "outputPath": "C:\\_src\\AppointmentScheduling\\AppointmentScheduling\\obj\\",
+      "projectPath": "/home/mtfs/Documents/projects/AppointmentSchedulling/AppointmentScheduling/AppointmentScheduling.csproj",
+      "packagesPath": "/home/mtfs/.nuget/packages/",
+      "outputPath": "/home/mtfs/Documents/projects/AppointmentSchedulling/AppointmentScheduling/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\mathe\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/home/mtfs/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -7521,7 +7519,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.403/RuntimeIdentifierGraph.json"
       }
     }
   }
