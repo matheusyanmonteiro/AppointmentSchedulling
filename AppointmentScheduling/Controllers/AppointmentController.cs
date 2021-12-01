@@ -18,6 +18,7 @@ namespace AppointmentScheduling.Controllers
     public IActionResult index()
     {
       ViewBag.DoctorList = _appointmentService.GetDoctorList();
+      ViewBag.PatientList = _appointmentService.getPatientList();
       return View();
     }
   }

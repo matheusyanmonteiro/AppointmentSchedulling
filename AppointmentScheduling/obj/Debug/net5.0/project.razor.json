@@ -15629,6 +15629,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/mtfs/Documents/projects/AppointmentSchedulling/AppointmentScheduling/Views/Shared/_AddEditAppointment.cshtml",
+      "TargetPath": "Views\\Shared\\_AddEditAppointment.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/mtfs/Documents/projects/AppointmentSchedulling/AppointmentScheduling/Views/Account/Register.cshtml",
       "TargetPath": "Views\\Account\\Register.cshtml",
       "FileKind": "mvc"
