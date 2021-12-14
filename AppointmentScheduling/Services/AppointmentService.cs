@@ -64,7 +64,25 @@ namespace AppointmentScheduling.Services
       }).ToList();
     }
 
-    public List<DoctorViewModel> GetDoctorList()
+        public AppointmentViewModel GetById(int id)
+        {
+            return _db.appointments.Where(x => x.Id == id).ToList().Select(c => new AppointmentViewModel()
+            {
+                Id = c.Id,
+                Description = c.Description,
+                StartDate = c.StartDate.ToString("yyyy-MM-dd HH:mm:ss"),
+                EndDate = c.EndDate.ToString("yyyy-MM-dd HH:mm:ss"),
+                Title = c.Title,
+                Duration = c.Duration,
+                IsDoctorApproved = c.IsDoctorApproved,
+                PatientId = c.PatientId,
+                DoctorId = c.DoctorId,
+                PatientName = _db.Users.Where(x => x.Id == c.PatientId).Select(x => x.Name).FirstOrDefault(),
+                DoctorName = _db.Users.Where(x => x.Id == c.DoctorId).Select(x => x.Name).FirstOrDefault()
+            }).SingleOrDefault();
+        }
+
+        public List<DoctorViewModel> GetDoctorList()
     {
       var doctors = (from user in _db.Users
                      join userRoles in _db.UserRoles on user.Id equals userRoles.UserId
