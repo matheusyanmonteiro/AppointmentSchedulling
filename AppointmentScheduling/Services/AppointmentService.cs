@@ -47,6 +47,23 @@ namespace AppointmentScheduling.Services
       }
     }
 
+    public List<AppointmentViewModel> DoctorsEventsById(string doctorId)
+    {
+      return _db.appointments
+      .Where(x => x.DoctorId == doctorId)
+      .ToList()
+      .Select(c => new AppointmentViewModel()
+      {
+        Id = c.Id,
+        Description = c.Description,
+        StartDate = c.StartDate.ToString("yyyy-MM-dd HH:mm:ss"),
+        EndDate = c.EndDate.ToString("yyyy-MM-dd HH:mm:ss"),
+        Title = c.Title,
+        Duration = c.Duration,
+        IsDoctorApproved = c.IsDoctorApproved
+      }).ToList();
+    }
+
     public List<DoctorViewModel> GetDoctorList()
     {
       var doctors = (from user in _db.Users
@@ -72,6 +89,22 @@ namespace AppointmentScheduling.Services
                       }).ToList();
 
       return patients;
+    }
+
+    public List<AppointmentViewModel> PatientsEventsById(string patientId)
+    {
+      return _db.appointments
+      .Where(x => x.PatientId == patientId)
+      .ToList()
+      .Select(c => new AppointmentViewModel()
+      {
+        Id = c.Id,
+        Description = c.Description,
+        StartDate = c.StartDate.ToString("yyyy-MM-dd HH:mm:ss"),
+        Title = c.Title,
+        Duration = c.Duration,
+        IsDoctorApproved = c.IsDoctorApproved
+      }).ToList();
     }
   }
 

@@ -11,5 +11,8 @@ namespace AppointmentScheduling.Services
     public List<DoctorViewModel> GetDoctorList();
     public List<PatientViewModel> getPatientList();
     public Task<int> AddUpdate(AppointmentViewModel model);
+
+    public List<AppointmentViewModel> DoctorsEventsById(string doctorId);
+    public List<AppointmentViewModel> PatientsEventsById(string patientId);
   }
 }
