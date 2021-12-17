@@ -1310,3 +1310,4 @@ C:\Users\Matheus.Monteiro\Documents\dir\AppointmentSchedulling\AppointmentSchedu
 C:\Users\Matheus.Monteiro\Documents\dir\AppointmentSchedulling\AppointmentScheduling\obj\Debug\net5.0\ref\AppointmentScheduling.dll
 C:\Users\Matheus.Monteiro\Documents\dir\AppointmentSchedulling\AppointmentScheduling\obj\Debug\net5.0\AppointmentScheduling.pdb
 C:\Users\Matheus.Monteiro\Documents\dir\AppointmentSchedulling\AppointmentScheduling\obj\Debug\net5.0\AppointmentScheduling.genruntimeconfig.cache
+C:\Users\Matheus.Monteiro\Documents\dir\AppointmentSchedulling\AppointmentScheduling\obj\Debug\net5.0\AppointmentScheduling.csproj.AssemblyReference.cache
