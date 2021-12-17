@@ -1286,7 +1286,6 @@ C:\Users\Matheus.Monteiro\Documents\dir\AppointmentSchedulling\AppointmentSchedu
 C:\Users\Matheus.Monteiro\Documents\dir\AppointmentSchedulling\AppointmentScheduling\obj\Debug\net5.0\AppointmentScheduling.RazorAssemblyInfo.cache
 C:\Users\Matheus.Monteiro\Documents\dir\AppointmentSchedulling\AppointmentScheduling\obj\Debug\net5.0\AppointmentScheduling.RazorAssemblyInfo.cs
 C:\Users\Matheus.Monteiro\Documents\dir\AppointmentSchedulling\AppointmentScheduling\obj\Debug\net5.0\staticwebassets\AppointmentScheduling.StaticWebAssets.Manifest.cache
-C:\Users\Matheus.Monteiro\Documents\dir\AppointmentSchedulling\AppointmentScheduling\obj\Debug\net5.0\staticwebassets\AppointmentScheduling.StaticWebAssets.xml
 C:\Users\Matheus.Monteiro\Documents\dir\AppointmentSchedulling\AppointmentScheduling\obj\Debug\net5.0\scopedcss\bundle\AppointmentScheduling.styles.css
 C:\Users\Matheus.Monteiro\Documents\dir\AppointmentSchedulling\AppointmentScheduling\obj\Debug\net5.0\AppointmentScheduling.TagHelpers.input.cache
 C:\Users\Matheus.Monteiro\Documents\dir\AppointmentSchedulling\AppointmentScheduling\obj\Debug\net5.0\AppointmentScheduling.TagHelpers.output.cache

@@ -7,7 +7,6 @@ $(document).ready(function () {
 
     InitializeCalendar();
 });
-
 var calendar;
 function InitializeCalendar() {
     try {
@@ -81,14 +80,36 @@ function onShowModal(obj, isEventDetail) {
         $("#doctorId").val(obj.doctorId);
         $("#patientId").val(obj.patientId);
         $("#id").val(obj.id);
-       
+        $("#lblPatientName").html(obj.patientName);
+        $("#lblDoctorName").html(obj.doctorName);
+        if (obj.isDoctorApproved) {
+            $("#lblStatus").html('Approved');
+            $("#btnConfirm").addClass("d-none");
+            $("#btnSubmit").addClass("d-none");
+        }
+        else {
+            $("#lblStatus").html('Pending');
+            $("#btnConfirm").removeClass("d-none");
+            $("#btnSubmit").removeClass("d-none");
+        }
+        $("#btnDelete").removeClass("d-none");
     }
-   
+    else {
+        $("#appointmentDate").val(obj.startStr + " " + new moment().format("hh:mm A"));
+        $("#id").val(0);
+        $("#btnDelete").addClass("d-none");
+        $("#btnSubmit").removeClass("d-none");
+    }
     $("#appointmentInput").modal("show");
 }
 
-
 function onCloseModal() {
+    $("#apointmentForm")[0].reset();
+    $("#id").val(0);
+    $("#title").val('');
+    $("#description").val('');
+    $("#appointmentDate").val('');
+
     $("#appointmentInput").modal("hide");
 }
 
@@ -103,26 +124,27 @@ function onSubmitForm() {
             DoctorId: $("#doctorId").val(),
             PatientId: $("#patientId").val(),
         };
-    
+
         $.ajax({
-            url: routeURL+'/Api/Appointment/SaveCalendarData',
+            url: routeURL + '/api/Appointment/SaveCalendarData',
             type: 'POST',
             data: JSON.stringify(requestData),
             contentType: 'application/json',
             success: function (response) {
                 if (response.status === 1 || response.status === 2) {
+                    calendar.refetchEvents();
                     $.notify(response.message, "success");
                     onCloseModal();
-                } else {
+                }
+                else {
                     $.notify(response.message, "error");
                 }
             },
             error: function (xhr) {
                 $.notify("Error", "error");
             }
-        })
+        });
     }
-
 }
 
 function checkValidation() {
@@ -130,18 +152,21 @@ function checkValidation() {
     if ($("#title").val() === undefined || $("#title").val() === "") {
         isValid = false;
         $("#title").addClass('error');
-    } else {
+    }
+    else {
         $("#title").removeClass('error');
     }
 
     if ($("#appointmentDate").val() === undefined || $("#appointmentDate").val() === "") {
         isValid = false;
         $("#appointmentDate").addClass('error');
-    } else {
+    }
+    else {
         $("#appointmentDate").removeClass('error');
     }
 
     return isValid;
+
 }
 
 function getEventDetailsByEventId(info) {
@@ -155,6 +180,58 @@ function getEventDetailsByEventId(info) {
                 onShowModal(response.dataenum, true);
             }
             successCallback(events);
+        },
+        error: function (xhr) {
+            $.notify("Error", "error");
+        }
+    });
+}
+
+function onDoctorChange() {
+    calendar.refetchEvents();
+}
+
+function onDeleteAppointment() {
+    var id = parseInt($("#id").val());
+    $.ajax({
+        url: routeURL + '/api/Appointment/DeleteAppoinment/' + id,
+        type: 'GET',
+        dataType: 'JSON',
+        success: function (response) {
+
+            if (response.status === 1) {
+                $.notify(response.message, "success");
+                calendar.refetchEvents();
+                onCloseModal();
+            }
+            else {
+
+                $.notify(response.message, "error");
+            }
+        },
+        error: function (xhr) {
+            $.notify("Error", "error");
+        }
+    });
+}
+
+function onConfirm() {
+    var id = parseInt($("#id").val());
+    $.ajax({
+        url: routeURL + '/api/Appointment/ConfirmEvent/' + id,
+        type: 'GET',
+        dataType: 'JSON',
+        success: function (response) {
+
+            if (response.status === 1) {
+                $.notify(response.message, "success");
+                calendar.refetchEvents();
+                onCloseModal();
+            }
+            else {
+
+                $.notify(response.message, "error");
+            }
         },
         error: function (xhr) {
             $.notify("Error", "error");

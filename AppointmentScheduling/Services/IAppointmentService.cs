@@ -15,6 +15,6 @@ namespace AppointmentScheduling.Services
     public List<AppointmentViewModel> DoctorsEventsById(string doctorId);
     public List<AppointmentViewModel> PatientsEventsById(string patientId);
 
-        public AppointmentViewModel GetById(int id);
+    public AppointmentViewModel GetById(int id);
   }
 }

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "c24ab980-4057-4d68-b35b-1156a4f6026e": {
+      "ProjectGuid": "c24ab980-4057-4d68-b35b-1156a4f6026e",
+      "DisplayName": "AppointmentScheduling",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
