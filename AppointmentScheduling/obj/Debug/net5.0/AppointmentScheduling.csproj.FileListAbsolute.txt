@@ -977,7 +977,6 @@ C:\Users\Matheus.Monteiro\Documents\dir\AppointmentSchedulling\AppointmentSchedu
 C:\Users\Matheus.Monteiro\Documents\dir\AppointmentSchedulling\AppointmentScheduling\bin\Debug\net5.0\refs\Microsoft.Extensions.Diagnostics.HealthChecks.dll
 C:\Users\Matheus.Monteiro\Documents\dir\AppointmentSchedulling\AppointmentScheduling\bin\Debug\net5.0\refs\Microsoft.Extensions.FileProviders.Abstractions.dll
 C:\Users\Matheus.Monteiro\Documents\dir\AppointmentSchedulling\AppointmentScheduling\bin\Debug\net5.0\refs\Microsoft.Extensions.FileProviders.Composite.dll
-C:\Users\Matheus.Monteiro\Documents\dir\AppointmentSchedulling\AppointmentScheduling\bin\Debug\net5.0\refs\Microsoft.Extensions.FileProviders.Embedded.dll
 C:\Users\Matheus.Monteiro\Documents\dir\AppointmentSchedulling\AppointmentScheduling\bin\Debug\net5.0\refs\Microsoft.Extensions.FileProviders.Physical.dll
 C:\Users\Matheus.Monteiro\Documents\dir\AppointmentSchedulling\AppointmentScheduling\bin\Debug\net5.0\refs\Microsoft.Extensions.FileSystemGlobbing.dll
 C:\Users\Matheus.Monteiro\Documents\dir\AppointmentSchedulling\AppointmentScheduling\bin\Debug\net5.0\refs\Microsoft.Extensions.Hosting.Abstractions.dll
@@ -1181,7 +1180,6 @@ C:\Users\Matheus.Monteiro\Documents\dir\AppointmentSchedulling\AppointmentSchedu
 C:\Users\Matheus.Monteiro\Documents\dir\AppointmentSchedulling\AppointmentScheduling\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\Matheus.Monteiro\Documents\dir\AppointmentSchedulling\AppointmentScheduling\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\Matheus.Monteiro\Documents\dir\AppointmentSchedulling\AppointmentScheduling\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-C:\Users\Matheus.Monteiro\Documents\dir\AppointmentSchedulling\AppointmentScheduling\bin\Debug\net5.0\Microsoft.Extensions.Caching.SqlServer.dll
 C:\Users\Matheus.Monteiro\Documents\dir\AppointmentSchedulling\AppointmentScheduling\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\Matheus.Monteiro\Documents\dir\AppointmentSchedulling\AppointmentScheduling\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
 C:\Users\Matheus.Monteiro\Documents\dir\AppointmentSchedulling\AppointmentScheduling\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
@@ -1310,4 +1308,9 @@ C:\Users\Matheus.Monteiro\Documents\dir\AppointmentSchedulling\AppointmentSchedu
 C:\Users\Matheus.Monteiro\Documents\dir\AppointmentSchedulling\AppointmentScheduling\obj\Debug\net5.0\ref\AppointmentScheduling.dll
 C:\Users\Matheus.Monteiro\Documents\dir\AppointmentSchedulling\AppointmentScheduling\obj\Debug\net5.0\AppointmentScheduling.pdb
 C:\Users\Matheus.Monteiro\Documents\dir\AppointmentSchedulling\AppointmentScheduling\obj\Debug\net5.0\AppointmentScheduling.genruntimeconfig.cache
-C:\Users\Matheus.Monteiro\Documents\dir\AppointmentSchedulling\AppointmentScheduling\obj\Debug\net5.0\AppointmentScheduling.csproj.AssemblyReference.cache
+C:\Users\Matheus.Monteiro\Documents\dir\AppointmentSchedulling\AppointmentScheduling\bin\Debug\net5.0\Mailjet.Client.dll
+C:\Users\Matheus.Monteiro\Documents\dir\AppointmentSchedulling\AppointmentScheduling\bin\Debug\net5.0\AppointmentScheduling.StaticWebAssets.xml
+C:\Users\Matheus.Monteiro\Documents\dir\AppointmentSchedulling\AppointmentScheduling\obj\Debug\net5.0\staticwebassets\AppointmentScheduling.StaticWebAssets.xml
+C:\Users\Matheus.Monteiro\Documents\dir\AppointmentSchedulling\AppointmentScheduling\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+C:\Users\Matheus.Monteiro\Documents\dir\AppointmentSchedulling\AppointmentScheduling\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\Matheus.Monteiro\Documents\dir\AppointmentSchedulling\AppointmentScheduling\bin\Debug\net5.0\Microsoft.Extensions.FileProviders.Embedded.dll

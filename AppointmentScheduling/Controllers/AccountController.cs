@@ -83,6 +83,10 @@ namespace AppointmentScheduling.Controllers
           {
             await _singInManager.SignInAsync(user, isPersistent: false);
           }
+          else
+          {
+            TempData["newAdminSingUp"] = user.Name;
+          }
 
           return RedirectToAction("Index", "Appointment");
         }
