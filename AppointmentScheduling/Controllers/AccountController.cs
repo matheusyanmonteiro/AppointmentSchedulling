@@ -1,16 +1,14 @@
 ﻿using AppointmentScheduling.Models;
 using AppointmentScheduling.Models.ViewModels;
 using AppointmentScheduling.Utility;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace AppointmentScheduling.Controllers
 {
-  public class AccountController : Controller
+    public class AccountController : Controller
   {
     private readonly ApplicationDbContext _db;
     UserManager<ApplicationUser> _userManager;
@@ -41,6 +39,8 @@ namespace AppointmentScheduling.Controllers
 
         if (result.Succeeded)
         {
+          var user = await _userManager.FindByNameAsync(model.Email);
+          HttpContext.Session.SetString("ssuserName", user.Name);
           return RedirectToAction("Index", "Appointment");
         }
 
@@ -78,7 +78,12 @@ namespace AppointmentScheduling.Controllers
         if (result.Succeeded)
         {
           await _userManager.AddToRoleAsync(user, model.RoleName);
-          await _singInManager.SignInAsync(user, isPersistent: false);
+
+          if (!User.IsInRole(Helper.Admin))
+          {
+            await _singInManager.SignInAsync(user, isPersistent: false);
+          }
+
           return RedirectToAction("Index", "Appointment");
         }
 
