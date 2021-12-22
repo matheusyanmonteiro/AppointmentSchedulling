@@ -37,7 +37,7 @@ This is a home page of application, built with bootstrap and javascript.
 </br>
 </br>
 
-### project based on the course of the instructor Denis Polijuta
+### project based on the course of the instructor Denis Panjuta 
  (https://www.udemy.com/user/denispanjuta/)
 </br>
 
