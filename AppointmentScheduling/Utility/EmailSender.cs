@@ -11,7 +11,7 @@ namespace AppointmentScheduling.Utility
     {
         public async Task  SendEmailAsync(string email, string subject, string htmlMessage)
         {
-            MailjetClient client = new MailjetClient("mailjet(public)", "mailjet(private)")
+            MailjetClient client = new MailjetClient("5fa42d2c02d7763828db7de59fc3b383", "0f0112d71b8f902c374ea565cc767d6f")
             {
                 
             };
@@ -19,7 +19,7 @@ namespace AppointmentScheduling.Utility
             {
                 Resource = Send.Resource,
             }
-            .Property(Send.FromEmail, "(confirmemail)@gmail.com")
+            .Property(Send.FromEmail, "matheusyanmonteiro@gmail.com")
             .Property(Send.FromName, "Appointment Scheduler")
             .Property(Send.Subject, subject)
             .Property(Send.HtmlPart, htmlMessage)

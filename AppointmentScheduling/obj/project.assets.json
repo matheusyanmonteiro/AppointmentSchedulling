@@ -9743,31 +9743,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Matheus.Monteiro\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "/home/mtfs/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Matheus.Monteiro\\Documents\\dir\\AppointmentSchedulling\\AppointmentScheduling\\AppointmentScheduling.csproj",
+      "projectUniqueName": "/home/mtfs/Documents/projects/AppointmentSchedulling/AppointmentScheduling/AppointmentScheduling.csproj",
       "projectName": "AppointmentScheduling",
-      "projectPath": "C:\\Users\\Matheus.Monteiro\\Documents\\dir\\AppointmentSchedulling\\AppointmentScheduling\\AppointmentScheduling.csproj",
-      "packagesPath": "C:\\Users\\Matheus.Monteiro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Matheus.Monteiro\\Documents\\dir\\AppointmentSchedulling\\AppointmentScheduling\\obj\\",
+      "projectPath": "/home/mtfs/Documents/projects/AppointmentSchedulling/AppointmentScheduling/AppointmentScheduling.csproj",
+      "packagesPath": "/home/mtfs/.nuget/packages/",
+      "outputPath": "/home/mtfs/Documents/projects/AppointmentSchedulling/AppointmentScheduling/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Matheus.Monteiro\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/home/mtfs/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -9843,7 +9836,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.404/RuntimeIdentifierGraph.json"
       }
     }
   }

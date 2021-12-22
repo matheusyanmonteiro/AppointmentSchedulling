@@ -29,6 +29,19 @@ namespace AppointmentScheduling.Services
 
       if (model != null && model.Id > 0)
       {
+        var appointment = _db.appointments.FirstOrDefault(x => x.Id == model.Id);
+
+        appointment.Title = model.Title;
+        appointment.Description = model.Description;
+        appointment.StartDate = startDate;
+        appointment.EndDate = endDate;
+        appointment.Duration = model.Duration;
+        appointment.DoctorId = model.DoctorId;
+        appointment.PatientId = model.PatientId;
+        appointment.IsDoctorApproved = false;
+        appointment.AdminId = model.AdminId;
+        
+        await _db.SaveChangesAsync();
         return 1; // in case updated 
       }
       else
@@ -75,7 +88,7 @@ namespace AppointmentScheduling.Services
         {
             var appointment = _db.appointments.FirstOrDefault(x => x.Id == id);
 
-            //var patient = _db.Users.FirstOrDefault(c => c.Id == appointment.PatientId);
+            var patient = _db.Users.FirstOrDefault(c => c.Id == appointment.PatientId);
             var doctor = _db.Users.FirstOrDefault(c => c.Id == appointment.DoctorId);
 
             if (appointment != null)
@@ -83,6 +96,9 @@ namespace AppointmentScheduling.Services
 
                 await _emailSender.SendEmailAsync(doctor.Email, "Appointment Deleted",
                  $"Your appointment is not avalible anymore.");
+
+                await _emailSender.SendEmailAsync(patient.Email, "Appointment Deleted",
+                  $"Your appointment is not avalible anymore.");
 
 
                 _db.appointments.Remove(appointment);
