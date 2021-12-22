@@ -36,7 +36,9 @@ to finished you net to compile the project, in the terminal you can run
 This is a home page of application, built with bootstrap and javascript.
 </br>
 </br>
-### projeto feito baseado no curso do instrutor Denis Panjuta (https://www.udemy.com/user/denispanjuta/)
+
+### project based on the course of the instructor Denis Polijuta
+ (https://www.udemy.com/user/denispanjuta/)
 </br>
 
 ### more courses  (https://www.dotnetmastery.com/#course)
